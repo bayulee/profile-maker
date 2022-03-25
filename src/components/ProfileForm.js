@@ -30,22 +30,23 @@ setProfile((prev)=>({
   
     <label> 
     First Name
-    <input type="text" name="firstname" onChange={handler}/>
+    <input type="text" name="firstname" value={profile.firstname} onChange={handler}/>
     </label>
 
     <label> 
     Last Name
-    <input type="text" name="lastname" onChange={handler}/>
+    <input type="text" name="lastname" value={profile.lastname} onChange={handler}/>
     </label>
-
+    </div>
+<div className='names'>
     <label> 
     Email
-    <input type="email" name="email" onChange={handler}/>
+    <input type="email" name="email" value={profile.email} onChange={handler}/>
     </label>
 
     <label> 
     phone
-    <input type="tel" name="phone" onChange={handler}/>
+    <input type="tel" name="phone" value={profile.phone} onChange={handler}/>
     </label>
     </div>
 
